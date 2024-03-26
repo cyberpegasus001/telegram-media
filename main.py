@@ -23,7 +23,7 @@ async def main():
     message_count = 0
     spamming = True
     
-    async for message in client.iter_messages(feet_channel):
+    async for message in client.iter_messages(target_channel):
         if not spamming:
             break
         
